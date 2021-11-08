@@ -42,4 +42,8 @@ jobs:
         with:
           branch: gh-pages
           folder: dist
+      - name: Print envirinmental variable
+        run: echo "$testVar!"
+        env:
+          testVar: This is the testVar
       # Step 2: Add deploy to Github pages here! Hot tip - The solution is in the Readme
